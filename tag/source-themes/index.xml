@@ -5,12 +5,20 @@
     <link>/tag/source-themes/</link>
       <atom:link href="/tag/source-themes/index.xml" rel="self" type="application/rss+xml" />
     <description>Source Themes</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 28 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 28 Sep 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>/images/icon_hu46f532bddfdb4d23a117552cb1e33c49_864557_512x512_fill_lanczos_center_3.png</url>
       <title>Source Themes</title>
       <link>/tag/source-themes/</link>
     </image>
+    
+    <item>
+      <title>Do individuals care differently about members of a majority vs a minority?</title>
+      <link>/publication/work-in-progress-1/</link>
+      <pubDate>Thu, 28 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>/publication/work-in-progress-1/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Social context, identity and prosocial behavior (Job Market Paper)</title>
@@ -21,10 +29,10 @@
     </item>
     
     <item>
-      <title>Do individuals care differently about members of a majority vs a minority?</title>
-      <link>/publication/working-paper-2/</link>
+      <title>Changing attitudes and reducing gender based violence in children: Evidence from a Pilot Study in Costa Rica</title>
+      <link>/publication/work-in-progress-2/</link>
       <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>/publication/working-paper-2/</guid>
+      <guid>/publication/work-in-progress-2/</guid>
       <description></description>
     </item>
     

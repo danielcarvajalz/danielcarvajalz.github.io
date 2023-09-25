@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications | Daniel Carvajal</title>
-    <link>/publication/</link>
-      <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
-    <description>Publications</description>
+    <title>9 | Daniel Carvajal</title>
+    <link>/publication-type/9/</link>
+      <atom:link href="/publication-type/9/index.xml" rel="self" type="application/rss+xml" />
+    <description>9</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 28 Sep 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu46f532bddfdb4d23a117552cb1e33c49_864557_512x512_fill_lanczos_center_3.png</url>
-      <title>Publications</title>
-      <link>/publication/</link>
+      <title>9</title>
+      <link>/publication-type/9/</link>
     </image>
     
     <item>
@@ -17,14 +17,6 @@
       <link>/publication/work-in-progress-1/</link>
       <pubDate>Thu, 28 Sep 2023 00:00:00 +0000</pubDate>
       <guid>/publication/work-in-progress-1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Social context, identity and prosocial behavior (Job Market Paper)</title>
-      <link>/publication/working-paper-1/</link>
-      <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>/publication/working-paper-1/</guid>
       <description></description>
     </item>
     
