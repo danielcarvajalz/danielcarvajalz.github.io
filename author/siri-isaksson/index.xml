@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Catalina Franco | Daniel Carvajal</title>
-    <link>/author/catalina-franco/</link>
-      <atom:link href="/author/catalina-franco/index.xml" rel="self" type="application/rss+xml" />
-    <description>Catalina Franco</description>
+    <title>Siri Isaksson | Daniel Carvajal</title>
+    <link>/author/siri-isaksson/</link>
+      <atom:link href="/author/siri-isaksson/index.xml" rel="self" type="application/rss+xml" />
+    <description>Siri Isaksson</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 13 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu46f532bddfdb4d23a117552cb1e33c49_864557_512x512_fill_lanczos_center_3.png</url>
-      <title>Catalina Franco</title>
-      <link>/author/catalina-franco/</link>
+      <title>Siri Isaksson</title>
+      <link>/author/siri-isaksson/</link>
     </image>
     
     <item>
@@ -17,14 +17,6 @@
       <link>/publication/work-in-progress-3/</link>
       <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
       <guid>/publication/work-in-progress-3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Changing attitudes and reducing gender based violence in children: Evidence from a Pilot Study in Costa Rica</title>
-      <link>/publication/work-in-progress-2/</link>
-      <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>/publication/work-in-progress-2/</guid>
       <description></description>
     </item>
     
