@@ -26,12 +26,6 @@
     <loc>/author/siri-isaksson/</loc>
     <lastmod>2023-10-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tag/source-themes/</loc>
-    <lastmod>2023-10-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2023-10-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/publication/work-in-progress-2/</loc>
     <lastmod>2023-10-13T00:00:00+00:00</lastmod>
   </url><url>
@@ -51,5 +45,7 @@
     <loc>/post/</loc>
   </url><url>
     <loc>/talk/</loc>
+  </url><url>
+    <loc>/tags/</loc>
   </url>
 </urlset>
