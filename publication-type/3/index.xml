@@ -5,7 +5,7 @@
     <link>/publication-type/3/</link>
       <atom:link href="/publication-type/3/index.xml" rel="self" type="application/rss+xml" />
     <description>3</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 13 Jan 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu46f532bddfdb4d23a117552cb1e33c49_864557_512x512_fill_lanczos_center_3.png</url>
       <title>3</title>
@@ -13,7 +13,15 @@
     </image>
     
     <item>
-      <title>Exposure to diversity, social proximity and ingroup bias (Job Market Paper)</title>
+      <title>Will Artificial Intelligence get in the way of gender equality?</title>
+      <link>/publication/working-paper-2/</link>
+      <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>/publication/working-paper-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exposure to diversity, social proximity and ingroup bias</title>
       <link>/publication/working-paper-1/</link>
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
       <guid>/publication/working-paper-1/</guid>
