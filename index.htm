@@ -1,110 +1,352 @@
 <!doctype html>
 <html lang="en">
-  <head>
-	<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-WGX2HVRM');</script>
-	<!-- End Google Tag Manager -->
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WGX2HVRM');</script>
+  <!-- End Google Tag Manager -->
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel Carvajal — Economist</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<style>
-		.abs-padding {
-			padding-bottom:15px !important;
-			margin-left:20px !important;
-		}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 
-	</style>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    <title>Daniel Carvajal - Econ</title>
-  </head>
-  <body>
-	<!-- Google Tag Manager (noscript) -->
+    :root {
+      --bg:        #f8f7f4;
+      --surface:   #ffffff;
+      --border:    #e4e1da;
+      --text:      #1c1c1c;
+      --muted:     #6b6b6b;
+      --accent:    #2d5a8e;
+      --accent-h:  #1e3f63;
+      --radius:    6px;
+      --max-w:     860px;
+    }
+
+    html { font-size: 16px; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-weight: 400;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+      padding: 0 1.25rem 4rem;
+    }
+
+    /* ── Header ─────────────────────────────────────── */
+    header {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 2.75rem 0 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header h1 {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 2.1rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: var(--text);
+    }
+
+    header p.sub {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 0.2rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    /* ── Main layout ────────────────────────────────── */
+    .layout {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      gap: 3rem;
+      padding-top: 2.5rem;
+    }
+
+    @media (max-width: 620px) {
+      .layout { grid-template-columns: 1fr; gap: 2rem; }
+      .sidebar { display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap; }
+      .sidebar img { width: 120px; }
+    }
+
+    /* ── Sidebar ────────────────────────────────────── */
+    .sidebar img {
+      width: 100%;
+      border-radius: var(--radius);
+      display: block;
+      border: 1px solid var(--border);
+    }
+
+    .sidebar-links {
+      margin-top: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .sidebar-links a {
+      font-size: 0.83rem;
+      color: var(--accent);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .sidebar-links a::before {
+      content: '↗';
+      font-size: 0.7rem;
+      opacity: 0.6;
+    }
+
+    .sidebar-links a:hover { color: var(--accent-h); text-decoration: underline; }
+
+    /* ── Main content ───────────────────────────────── */
+    .main section { margin-bottom: 2.75rem; }
+
+    .main h2 {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
+      letter-spacing: 0.01em;
+    }
+
+    .main p { font-size: 0.93rem; color: var(--text); }
+    .main p + p { margin-top: 0.75rem; }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-h); text-decoration: underline; }
+
+    /* ── Paper entries ──────────────────────────────── */
+    .paper {
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .paper:last-child { border-bottom: none; }
+
+    .paper-title {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .paper-authors {
+      font-size: 0.83rem;
+      color: var(--muted);
+      margin-top: 0.2rem;
+    }
+
+    .paper-status {
+      font-size: 0.83rem;
+      color: var(--muted);
+      font-style: italic;
+      margin-top: 0.15rem;
+    }
+
+    /* Journal names: bold + italic, no color override */
+    .paper-status strong {
+      font-weight: 600;
+      font-style: italic;
+    }
+
+    .paper-links {
+      margin-top: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .paper-links a, .toggle-btn {
+      font-size: 0.8rem;
+      color: var(--accent);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      font-family: inherit;
+      text-decoration: none;
+    }
+
+    .paper-links a:hover, .toggle-btn:hover {
+      color: var(--accent-h);
+      text-decoration: underline;
+    }
+
+    .toggle-btn::before { content: '+ '; }
+    .toggle-btn.open::before { content: '− '; }
+
+    /* ── Abstract ───────────────────────────────────── */
+    .abstract {
+      display: none;
+      margin-top: 0.85rem;
+      font-size: 0.85rem;
+      color: #444;
+      line-height: 1.75;
+      padding: 0.9rem 1rem;
+      background: var(--surface);
+      border-left: 3px solid var(--border);
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+
+    .abstract.open { display: block; }
+
+    /* ── Contact info ───────────────────────────────── */
+    .contact-item {
+      font-size: 0.88rem;
+      color: var(--text);
+      margin-top: 0.4rem;
+    }
+
+    .contact-item span { color: var(--muted); margin-right: 0.35rem; }
+  </style>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGX2HVRM"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-	<div class="container">
-		<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-		  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-			<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-			<span class="fs-1">Daniel Carvajal</span>
-		  </a>
-	
-		  <ul class="nav nav-pills">
-			<!--<li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>-->
-			<!--<li class="nav-item"><a href="./other.htm" class="nav-link">Other Stuff</a></li>-->
-		  </ul>
-		</header>
-	  </div>
-	<div class="container-lg ">
-	<div class="row justify-content-between">
-	  <div class="col-sm-3">
-		  <img src="./img/Daniel_3.jpeg" class="img-fluid" />
-		  <hr/>
-		  
-			<div><a href="https://scholar.google.com/citations?user=vraS_lsAAAAJ&hl=en" target="_blank">Google Scholar</a> </div>
-			<div><a href="https://bsky.app/profile/dcarvajalz.bsky.social" target="_blank">Bluesky</a></div>
-			<br/>
-	</div>
-	<div class = "col-sm-8">
-		<div>
-			<h4>About me</h4>
-			<p>I am a Postdoctoral Researcher at the Department of Economics at <a href="https://www.aalto.fi/en/department-of-economics" target="_blank" rel="noopener">Aalto University</a> in Helsinki, Finland. Previously, I completed my PhD at <a href="https://www.nhh.no/en/research-centres/fair/" target="_blank" rel="noopener">FAIR</a> in NHH Norwegian School of Economics. My research lies within the <b>economics of education</b> and <b>behavioral economics</b>. In my work, I study how social environment shapes identity and educational choices, as well as the emergence of gender gaps in education and labor market outcomes.</p>
-			<p><b>Email:</b> daniel.carvajal@aalto.fi</p>
-			<p> You can find my <b>CV</b> <a href="./docs/CV_DC_2603.pdf" target=_blank>here</a></p>
-		</div>
-		<br/>
-		<div>
-			<h4>Working papers</h4>
-			<div>
-				<p><b>Will Artificial Intelligence get in the way of achieving gender equality?</b>
-				<br>(with Catalina Franco and Siri Isaksson) 
-				<!-- <br><i>submitted</i> --> </p>
-				<p><a class="" role="button" data-bs-toggle="collapse" href="#abs4" aria-expanded="false" aria-controls="abs4">Abstract</a> | 
-					<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4759218" target=_blank>Paper</a> 
-				</p>
-				<div class="collapse abs-padding" id="abs4">We conduct two surveys with preregistered experiments to examine gender differences in generative AI adoption and potential labor market consequences. First, we document a substantial gender gap in AI adoption among students at a top business school in Norway, with female students, particularly top students, opting out of AI use. Second, a survey of managers shows that acquiring AI skills would significantly enhance job prospects for top female students currently avoiding AI. Finally, we provide causal evidence on policy tools to close the gender gap in AI adoption. Our findings show that generative AI could widen existing gender gaps in the labor market, but appropriate policies can help prevent this outcome.</div>
-			<div>
-				<p><b>Exposure to diversity, social proximity and ingroup bias</b>
-				<br><i>conditionally accepted, <u>The Economic Journal</u></i> </p>
-				<p><a class="" role="button" data-bs-toggle="collapse" href="#abs5" aria-expanded="false" aria-controls="abs5">Abstract</a> | 
-					<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4916008" target=_blank>Paper</a> 
-				</p>
-			<div class="collapse abs-padding" id="abs5">As society becomes increasingly diverse, will changes in an individual's exposure to diversity influence their interactions with others? I study prosocial behavior in a large-scale U.S. sample, where participants are exogenously exposed to social contexts with varying levels of nationality diversity. I find that diverse contexts amplify participants' ingroup bias&ndash;the tendency to favor one's own group&ndash;driven by increased allocations towards fellow nationals and decreased allocations to foreigners, relative to giving in homogeneous contexts where such bias is not present. A change in perceptions of social proximity corresponds to a driver of the effect of diversity in allocations. The findings are consistent across subgroups of the population, which suggests that the study identifies a general heuristic through which individuals identify with groups, where social context&ndash;and not only individual characteristics&ndash;is key for the emergence of ingroup bias. <br/></div>
-			</div>
-			<br/>
-		<!-- 	<h4>Work in progress</h4>
-			<div>
-			<p><b>Preferences and educational choices of the youth</b>
-			<br>(with Tushar Kundu, Ellen Sahlstr&ouml;m, Matti Sarvim&auml;ki, Mikko Silliman) 
-			<br><i>Status: piloting</i> </p>
-			<p><b>Well-being in school and academic achievement</b>
-			<br>(with Tushar Kundu, Ellen Sahlstr&ouml;m, Matti Sarvim&auml;ki, Mikko Silliman) 
-			<br><i>Status: piloting</i> </p>
-			<p><b>Cool kids: disentangling social image in high school students</b>
-			<br>(with Ellen Sahlstr&ouml;m, Matti Sarvim&auml;ki, Mikko Silliman) 
-			<br><i>Status: piloting</i> </p>
-			<p><b>Rule-ambiguity and gender gaps</b>
-			<br>(with Catalina Franco) 
-			<br><i>Status: piloting</i> </p>
-			<p><b>The role of a majority-minority status and ingroup affinity in shaping social preferences</b>
-			<br><i>Draft available upon request</i> </p>
-			</div>
-		-->	
-		</div>
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
-		
-	</div>
-</div>
-</div>
-  </body>
+<header>
+  <h1>Daniel Carvajal</h1>
+  <p class="sub">Postdoctoral Researcher &nbsp;·&nbsp; Economics</p>
+</header>
 
+<div class="layout">
+
+  <!-- ── Sidebar ── -->
+  <aside class="sidebar">
+    <img src="./img/Daniel_3.jpeg" alt="Daniel Carvajal">
+    <div class="sidebar-links">
+      <a href="https://scholar.google.com/citations?user=vraS_lsAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://bsky.app/profile/dcarvajalz.bsky.social" target="_blank" rel="noopener">Bluesky</a>
+      <a href="./docs/CV_DC_2603.pdf" target="_blank" rel="noopener">Curriculum Vitae</a>
+    </div>
+  </aside>
+
+  <!-- ── Main ── -->
+  <main class="main">
+
+    <section>
+      <p>I am a Postdoctoral Researcher at the Department of Economics at
+        <a href="https://www.aalto.fi/en/department-of-economics" target="_blank" rel="noopener">Aalto University</a>
+        in Helsinki, Finland. Previously, I completed my PhD at
+        <a href="https://www.nhh.no/en/research-centres/fair/" target="_blank" rel="noopener">FAIR</a>
+        at NHH Norwegian School of Economics.</p>
+      <p>My research lies within the <strong>economics of education</strong> and
+        <strong>behavioral economics</strong>. I study how social environment shapes identity and
+        educational choices, as well as the emergence of gender gaps in education and labor market outcomes.</p>
+      <div class="contact-item" style="margin-top:1rem;">
+        <span>Email</span>daniel.carvajal@aalto.fi
+      </div>
+    </section>
+
+	<!-- 
+    <section>
+      <h2>Publications</h2>
+
+      <div class="paper">
+        <div class="paper-title">Exposure to diversity, social proximity and ingroup bias</div>
+        <div class="paper-status">Accepted &mdash; <strong>The Economic Journal</strong></div>
+        <div class="paper-links">
+          <button class="toggle-btn" onclick="toggleAbstract(this, 'abs5')">Abstract</button>
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4916008" target="_blank" rel="noopener">SSRN</a>
+        </div>
+        <div class="abstract" id="abs5">
+          As society becomes increasingly diverse, will changes in an individual's exposure to diversity influence their interactions with others? I study prosocial behavior in a large-scale U.S. sample, where participants are exogenously exposed to social contexts with varying levels of nationality diversity. I find that diverse contexts amplify participants' ingroup bias&mdash;the tendency to favor one's own group&mdash;driven by increased allocations towards fellow nationals and decreased allocations to foreigners, relative to giving in homogeneous contexts where such bias is not present. A change in perceptions of social proximity corresponds to a driver of the effect of diversity in allocations. The findings are consistent across subgroups of the population, which suggests that the study identifies a general heuristic through which individuals identify with groups, where social context&mdash;and not only individual characteristics&mdash;is key for the emergence of ingroup bias.
+        </div>
+      </div>
+
+    </section>
+	 -->
+
+    <section>
+      <h2>Research</h2>
+
+      <div class="paper">
+        <div class="paper-title">Exposure to diversity, social proximity and ingroup bias</div>
+        <div class="paper-status">Conditionally accepted &mdash; <strong>The Economic Journal</strong></div>
+        <div class="paper-links">
+          <button class="toggle-btn" onclick="toggleAbstract(this, 'abs5')">Abstract</button>
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4916008" target="_blank" rel="noopener">SSRN</a>
+        </div>
+        <div class="abstract" id="abs5">
+          As society becomes increasingly diverse, will changes in an individual's exposure to diversity influence their interactions with others? I study prosocial behavior in a large-scale U.S. sample, where participants are exogenously exposed to social contexts with varying levels of nationality diversity. I find that diverse contexts amplify participants' ingroup bias&mdash;the tendency to favor one's own group&mdash;driven by increased allocations towards fellow nationals and decreased allocations to foreigners, relative to giving in homogeneous contexts where such bias is not present. A change in perceptions of social proximity corresponds to a driver of the effect of diversity in allocations. The findings are consistent across subgroups of the population, which suggests that the study identifies a general heuristic through which individuals identify with groups, where social context&mdash;and not only individual characteristics&mdash;is key for the emergence of ingroup bias.
+        </div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">Will Artificial Intelligence get in the way of achieving gender equality?</div>
+        <div class="paper-authors">with Catalina Franco and Siri Isaksson</div>
+        <div class="paper-status">Reject &amp; Resubmit &mdash; <strong>Journal of Human Resources</strong></div>
+        <div class="paper-links">
+          <button class="toggle-btn" onclick="toggleAbstract(this, 'abs4')">Abstract</button>
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4759218" target="_blank" rel="noopener">SSRN</a>
+        </div>
+        <div class="abstract" id="abs4">
+          We conduct two surveys with preregistered experiments to examine gender differences in generative AI adoption and potential labor market consequences. First, we document a substantial gender gap in AI adoption among students at a top business school in Norway, with female students, particularly top students, opting out of AI use. Second, a survey of managers shows that acquiring AI skills would significantly enhance job prospects for top female students currently avoiding AI. Finally, we provide causal evidence on policy tools to close the gender gap in AI adoption. Our findings show that generative AI could widen existing gender gaps in the labor market, but appropriate policies can help prevent this outcome.
+        </div>
+      </div>
+
+	  <!-- 
+
+      <div class="paper">
+        <div class="paper-title">Unclear rules and gender gaps</div>
+        <div class="paper-authors">with Catalina Franco and Anna Hochleitner</div>
+        <div class="paper-status">Data collection in progress</div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">Preferences and educational choices of the youth</div>
+        <div class="paper-authors">with Tushar Kundu, Ellen Sahlstr&ouml;m, Matti Sarvim&auml;ki, Mikko Silliman</div>
+        <div class="paper-status">Data collection in progress</div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">Well-being in school and academic achievement</div>
+        <div class="paper-authors">with Tushar Kundu, Ellen Sahlstr&ouml;m, Matti Sarvim&auml;ki, Mikko Silliman</div>
+        <div class="paper-status">Data collection in progress</div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">The role of a majority-minority status and ingroup affinity in shaping social preferences</div>
+        <div class="paper-status">Draft available upon request</div>
+      </div>
+	  -->
+
+    </section>
+
+  </main>
+</div>
+
+<script>
+  function toggleAbstract(btn, id) {
+    const el = document.getElementById(id);
+    const open = el.classList.toggle('open');
+    btn.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open);
+  }
+</script>
+
+</body>
 </html>
